@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="violet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Citadel Color Finder</title>
+
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.violet.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Scripts -->
+    <script src="colors.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <main class="container">
+        <div class="title-section">
+            <h1 class="main-title">Citadel Color Finder</h1>
+        </div>
+        
+        <article>
+            <header class="compact-header">
+                <h2>Select a color</h2>
+                <p>Find its complementary color and matching alternatives</p>
+            </header>
+            
+            <div class="custom-select-container">
+                <div class="selected-option">
+                    <span>-- Select a color --</span>
+                </div>
+                <div class="options-container">
+                    <!-- Color options will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="all-colors-display">
+                <div class="color-section">
+                    <h3>Selected Color</h3>
+                    <div id="color-preview" class="color-preview-large"></div>
+                    <div class="color-info">
+                        <div>
+                            <strong>Color Name:</strong> <span id="color-name">-</span>
+                        </div>
+                        <div>
+                            <strong>Hex Code:</strong> <span id="color-hex">-</span>
+                        </div>
+                        <div>
+                            <strong id="paint-types">Types: -</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-section">
+                    <h3>Complementary Color</h3>
+                    <div id="complementary-preview" class="color-preview-large"></div>
+                    <div class="color-info">
+                        <strong>Hex Code:</strong> <span id="complementary-hex">-</span>
+                    </div>
+                </div>
+
+                <div class="color-section">
+                    <h3>1st Nearest Match</h3>
+                    <div id="nearest-preview" class="color-preview-large"></div>
+                    <div class="color-info">
+                        <div>
+                            <strong>Color Name:</strong> <span id="nearest-name">-</span>
+                        </div>
+                        <div>
+                            <strong>Hex Code:</strong> <span id="nearest-hex">-</span>
+                        </div>
+                        <div>
+                            <strong id="nearest-types">Types: -</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-section">
+                    <h3>2nd Nearest Match</h3>
+                    <div id="second-nearest-preview" class="color-preview-large"></div>
+                    <div class="color-info">
+                        <div>
+                            <strong>Color Name:</strong> <span id="second-nearest-name">-</span>
+                        </div>
+                        <div>
+                            <strong>Hex Code:</strong> <span id="second-nearest-hex">-</span>
+                        </div>
+                        <div>
+                            <strong id="second-nearest-types">Types: -</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
